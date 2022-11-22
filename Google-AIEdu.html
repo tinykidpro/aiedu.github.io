@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AIEdu Tools for Google Workspace</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css" />
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="hidden()" style="background-color:#023a76">
+    <center> 
+         <br>
+        <img src="https://static.wixstatic.com/media/111a8d_87be60e9644645868fbafb05c5a5220b~mv2.png/v1/fill/w_134,h_48,al_c,q_85,usm_2.00_1.00_0.00,enc_auto/111a8d_87be60e9644645868fbafb05c5a5220b~mv2.png">
+        <p></p>
+<div class="container">
+  <h2 class="title">
+    <span class="title-word title-word-1">AI</span>
+    <span class="title-word title-word-2">Education</span>
+    <span class="title-word title-word-3">Format</span>
+    <span class="title-word title-word-4">Tool</span>
+  </h2>
+</div>
+    </center>
+    <div class="container main-page">
+        <div class="row inp">
+            <div class="col-lg-6">
+                <h3 style="color:White;">1. List of names</h3>
+                <textarea rows="5" id="autoresizing" placeholder="Example:&#10;Trần Thị Kim Thương&#10;Nguyễn Phạm Tuyết Phấn&#10;Phạm Ngọc Anh&#10;Trương Ngọc My"></textarea>
+            </div>
+            <div class="col-lg-6">
+                <h3 style="color:White;">2. Email domain</h3>
+                <input onchange="checkmail()" id="email" placeholder="Example: aiedu.com.vn" />
+                        <div class="row">
+            <button onclick="noshow()" class="convert" style="margin: 20px 10px;">3. Format</button>
+            <button class="copy" style="margin: 20px 20px;" onclick="selectElementContents( document.getElementById('gf_ChuotNhat') );">4. Copy</button>
+            <button class="successbt" id="success">
+                
+            </button>
+        </div>
+            </div>
+        </div>
+<center><h3 style="color:White;">Result Table</h3></center>
+        <div class="row">
+            <div class="col-lg-12">
+                <table style="margin-bottom: -35px;margin-top: 0px;" class=" table_page cls_none">
+                    <thead>
+                        <tr>
+                            <th style="width: 388px" class="text-center" scope="col">FirstName</th>
+                            <th style="width: 150px" class="text-center" scope="col">LastName</th>
+                            <th style="width: 438px" class="text-center" scope="col">Email</th>
+                            <th class="text-center" scope="col">Password</th>
+                        </tr>
+                    </thead>                    
+                </table>
+                <table class=" table_page cls_none" id="gf_ChuotNhat">
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="thuong.js"></script>
+</body>
+
+</html>
